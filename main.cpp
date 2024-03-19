@@ -1,11 +1,17 @@
-#include "Linear.h"
-#include "Square.h"
-#include <iostream>
+#include<iostream>
+#include"Array.h"
 int main() {
     setlocale(LC_ALL, "Rus");
-    Root* equation1 = new Linear(0.0, 0.0);
-    equation1->print();
-    std::cout << std::endl;
-    Root* equation2 = new Square(0.0, 9.0, 5.0);
-    equation2->print();
+    int a, b;
+    std::cin >> a >> b;
+    Array<int> arr1(a,b);
+    std::cin >> arr1;
+    std::cout << arr1 << std::endl;
+    a = 8;
+    b = 10;
+    Array<double> arr2(a,b);
+    std::cin >> arr2;
+    std::cout << arr2 << std::endl;
+    
+    return 0;
 }
